@@ -1,0 +1,23 @@
+.AllType{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    transition: all 0.4s ease 0s;
+}
+.Carrousel{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.CarrouselWrapper{
+    max-width: 23rem;
+    overflow: hidden;
+}
+
+
+
+.CarrouselButton{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}

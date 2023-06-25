@@ -1,0 +1,14 @@
+.NavContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1440px;
+    padding-top: 1rem;
+}
+
+.IconSocials{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}

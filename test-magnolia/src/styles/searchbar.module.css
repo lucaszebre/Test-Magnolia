@@ -1,0 +1,34 @@
+.SearchBar{
+    display: flex;
+    flex-direction: row;
+    width: 30.5rem;
+    height: 3.5rem;
+    border-radius: .5rem;
+
+}
+
+.SearchBarInput{
+    outline: none;
+    background-color: transparent;
+    margin-right: -1rem;
+    width: 100%;
+    padding: .5rem;
+    border: 0.13rem solid rgb(47, 90, 255);;
+    
+    border-radius: .5rem;
+    color: white;
+}
+
+.SearchButton{
+    justify-content: center;
+    border-radius: 0px 0.5rem 0.5rem 0px;
+    align-items: center;
+    display: flex;
+    padding: 0 2rem;
+    background: rgb(47, 90, 255);
+    cursor: pointer;
+    border: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    
+}
