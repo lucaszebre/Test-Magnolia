@@ -3,7 +3,7 @@ import styles from '@/styles/nav.module.css'
 import Image from 'next/image'
 const Nav = () => {
     return (
-        <div className={styles.NavContainer}>
+        <header className={styles.NavContainer}>
             <Image src={'/pokemon-logo.svg'}  alt='pokemon-logo' width={153} height={56}/>
             <div className={styles.IconSocials}>
                 <a href='https://github.com/lucaszebre' target='_blank'>
@@ -13,7 +13,7 @@ const Nav = () => {
                     <Image src={'/assets/logo-linkedin.svg'} alt={'linkedin-logo'} width={32} height={32} />
                 </a>
             </div>
-        </div>
+        </header>
     )
 }
 
