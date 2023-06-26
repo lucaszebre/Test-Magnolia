@@ -17,7 +17,7 @@ const AllPokemon = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [found, setFound] = useState(false);
 
-    function LoadMore(){
+    function LoadMore(){  // function to decide if we can load more data or not , and then load more data 
         if(
             25*(load+1)>totalPokemonCount || 25*(load)>totalPokemonCount
         ){
@@ -82,7 +82,7 @@ const AllPokemon = () => {
                 }
                 }
             } catch (error) {
-                // setFound(false)
+                setFound(false)
                 setIsLoading(false);
                 console.error('Error fetching Pokemon:', error);
             }
@@ -132,25 +132,25 @@ const AllPokemon = () => {
                 </div>
             ) : (
                 <div className={styles.AllPokemonRowNotfound}>
-                <button className={styles.LoadMoreBtn}>
-                    Le pokémon n'a pas été trouvé
-                </button>
+                    <button className={styles.LoadMoreBtn}>
+                        Le pokémon n'a pas été trouvé
+                    </button>
                 </div>
             )
             }
- 
+
             
         { !pagination && isLoadingMore &&(
             <div className={styles.AllPokemonRow}>
-            <button className={styles.LoadMoreBtn} onClick={() => LoadMore()}
-            disabled={!isLoadingMore}>
-                Load More
-            </button>
+                <button className={styles.LoadMoreBtn} onClick={() => LoadMore()}
+                disabled={!isLoadingMore}>
+                    Load More
+                </button>
             </div>
         )}
         {pagination && (
             <div className={styles.AllPokemonRow}>
-            <Pagination />
+                <Pagination />
             </div>
         )}
         </div>

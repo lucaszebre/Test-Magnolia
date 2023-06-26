@@ -20,8 +20,8 @@ const PokemonType = (props: { type: string }) => {
         className={styles.Pokemontype}
         style={{ backgroundColor: typeColor }}
         >
-        <Image src={`/pokemonTypes/${props.type}.svg`} alt={props.type} width={16} height={16} />
-        {props.type}
+            <Image src={`/pokemonTypes/${props.type}.svg`} alt={props.type} width={16} height={16} />
+            {props.type}
         </button>
     );
 };

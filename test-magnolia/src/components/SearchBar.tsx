@@ -21,16 +21,16 @@
 
     return (
         <form onSubmit={handleSubmit} className={styles.SearchBar}>
-        <input
-            className={styles.SearchBarInput}
-            type="text"
-            placeholder="un pokémon?"
-            value={inputValue}
-            onChange={handleChange}
-        />
-        <button type="submit" className={styles.SearchButton}>
-            <Image src="/assets/icon-search.svg" alt="search-icon" width={24} height={24} />
-        </button>
+            <input
+                className={styles.SearchBarInput}
+                type="text"
+                placeholder="un pokémon?"
+                value={inputValue}
+                onChange={handleChange}
+            />
+            <button type="submit" className={styles.SearchButton}>
+                <Image src="/assets/icon-search.svg" alt="search-icon" width={24} height={24} />
+            </button>
         </form>
     );
     };

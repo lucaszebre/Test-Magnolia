@@ -21,3 +21,27 @@
     border: none;
     background-color: transparent;
 }
+
+@media (max-width:1024px){
+    .CarrouselWrapper{
+        width: 100%;
+        max-width: unset;
+    }
+    .CarrouselArrow{
+        display: none;
+    }
+    .AllType{
+        overflow: scroll;
+        scrollbar-color: transparent;
+        padding: 1rem;
+    }
+    .AllType::-webkit-scrollbar {
+        width: 6px; /* Adjust the width as needed */
+      }
+      
+      .AllType::-webkit-scrollbar-thumb {
+        background-color: transparent; /* Change the color to your desired color */
+      }
+
+        
+}

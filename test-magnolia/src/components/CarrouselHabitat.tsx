@@ -29,33 +29,35 @@ import HabitatButton from './HabitatButton';
 
     return (
         <div className={styles.Carrousel}>
-        <button className={styles.CarrouselButton} disabled={slidePosition === 0}  onClick={() => slideNavigation('prev')}>
-            <Image
-                src={'/assets/icon-arrow-left.svg'}
-                alt='left-arrow'
-                width={32}
-                height={32}
-            
-            
-            />
-        </button>
-        <div className={styles.CarrouselWrapper}>
-            <div className={styles.AllType} style={{ transform: `translateX(${slidePosition}rem)` }}>
-            {ArrayHabitat.map((habitat) => (
-                <HabitatButton key={habitat} habitat={habitat} />
-            ))}
-            </div>
-        </div>
-        <button  className={styles.CarrouselButton} onClick={() => slideNavigation('next')}
-                disabled={slidePosition === -87.5}>
-            <Image
-                src={'/assets/icon-arrow-right.svg'}
-                alt='right-arrow'
-                width={32}
-                height={32}
+            <button className={styles.CarrouselButton} disabled={slidePosition === 0}  onClick={() => slideNavigation('prev')}>
+                <Image
+                    className={styles.CarrouselArrow}
+                    src={'/assets/icon-arrow-left.svg'}
+                    alt='left-arrow'
+                    width={32}
+                    height={32}
                 
-            />
-        </button>
+                
+                />
+            </button>
+            <div className={styles.CarrouselWrapper}>
+                <div className={styles.AllType} style={{ transform: `translateX(${slidePosition}rem)` }}>
+                {ArrayHabitat.map((habitat) => (
+                    <HabitatButton key={habitat} habitat={habitat} />
+                ))}
+                </div>
+            </div>
+            <button  className={styles.CarrouselButton} onClick={() => slideNavigation('next')}
+                    disabled={slidePosition === -87.5}>
+                <Image
+                    className={styles.CarrouselArrow}
+                    src={'/assets/icon-arrow-right.svg'}
+                    alt='right-arrow'
+                    width={32}
+                    height={32}
+                    
+                />
+            </button>
         </div>
     );
     };

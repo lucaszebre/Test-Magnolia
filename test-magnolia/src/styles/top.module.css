@@ -1,4 +1,6 @@
 .Top{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -38,9 +40,19 @@
     font-family: 'Montserrat';
 }
 
-.TopTypeWrapper{
+.TopWrapper2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 1em;
+}
+
+@media (max-width:1024px){
+    .TopWrapper,.TopWrapper2{
+        flex-direction: column;
+        align-items: start;
+    }
+    .TopRow{
+        width: 100%;
+    }
 }

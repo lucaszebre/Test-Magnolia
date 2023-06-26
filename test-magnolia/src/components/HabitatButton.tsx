@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import styles from '@/styles/pokemontype.module.css';
 import { colorType } from '@/utils/colorType';
 import { useContext } from "react";
