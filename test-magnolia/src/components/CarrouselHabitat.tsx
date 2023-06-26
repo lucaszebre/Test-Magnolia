@@ -48,7 +48,7 @@ import HabitatButton from './HabitatButton';
                 </div>
             </div>
             <button  className={styles.CarrouselButton} onClick={() => slideNavigation('next')}
-                    disabled={slidePosition === -87.5}>
+                    disabled={slidePosition === -25}>
                 <Image
                     className={styles.CarrouselArrow}
                     src={'/assets/icon-arrow-right.svg'}
