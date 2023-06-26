@@ -1,38 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Pokedex
+A Pokedex web application built with React, Next.js, TypeScript, and the PokeAPI.
 
-## Getting Started
+Features
+View a list of Pokemon with their details, including name, number, type, height, weight, and stats.
+Filter Pokemon by type using a carousel component.
+Search for Pokemon by name.
+Responsive design for optimal viewing on different devices.
+Technologies Used
+React: A JavaScript library for building user interfaces.
+Next.js: A React framework for server-side rendering and static site generation.
+TypeScript: A statically-typed superset of JavaScript.
+PokeAPI: A RESTful API for retrieving Pokemon data.
+React Bootstrap: A library of reusable UI components for React.
+React Context: A feature of React for managing global state.
+Installation
+Clone the repository: git clone https://github.com/your-username/pokedex.git
+Navigate to the project directory: cd pokedex
+Install the dependencies: npm install
+Usage
+Start the development server: npm run dev
+Open your browser and visit http://localhost:3000 to access the Pokedex.
+Folder Structure
+/pages: Contains the Next.js pages for routing and rendering.
+/components: Contains reusable React components.
+/styles: Contains CSS styles and module files for styling the components.
+/context: Contains the React Context and state management related files.
+/utils: Contains utility functions for fetching data from the PokeAPI.
+Contributing
+Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
 
-First, run the development server:
+Fork the repository.
+Create a new branch: git checkout -b feature/your-feature-name
+Make your changes and commit them: git commit -m 'Add some feature'
+Push to the branch: git push origin feature/your-feature-name
+Submit a pull request.
+License
+This project is licensed under the MIT License.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Acknowledgements
+PokeAPI: Providing the Pokemon data for the Pokedex.
+React Bootstrap: A great library for building responsive UI components.
+Next.js: A powerful React framework for building server-side rendered and static sites.
+Contact
+If you have any questions or suggestions, feel free to reach out to me at lucaszebre1@gmail.com.
