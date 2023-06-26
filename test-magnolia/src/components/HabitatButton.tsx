@@ -4,15 +4,15 @@ import styles from '@/styles/pokemontype.module.css';
 import { colorType } from '@/utils/colorType';
 import { useContext } from "react";
 import { Pokecontext } from '@/context/Pokecontext';
-const PokemonType = (props: { type: string }) => {
-    const typeColor = colorType(props.type);
-    const {setType,setLoad,setIsLoadingMore,setHabitat,setPagination} = useContext(Pokecontext)
+const HabitatButton = (props: { habitat: string }) => {
+    const typeColor = colorType(props.habitat);
+    const {setHabitat,setType,setLoad,setIsLoadingMore,setPagination} = useContext(Pokecontext)
 
     return (
         <button
         onClick={()=>{
-            setHabitat('')
-            setType(props.type),
+            setType('')
+            setHabitat(props.habitat),
             setLoad(1),
             setIsLoadingMore(true),
             setPagination(false)
@@ -20,11 +20,10 @@ const PokemonType = (props: { type: string }) => {
         className={styles.Pokemontype}
         style={{ backgroundColor: typeColor }}
         >
-        <Image src={`/pokemonTypes/${props.type}.svg`} alt={props.type} width={16} height={16} />
-        {props.type}
+        
+        {props.habitat}
         </button>
     );
 };
 
-export default PokemonType;
-
+export default HabitatButton;

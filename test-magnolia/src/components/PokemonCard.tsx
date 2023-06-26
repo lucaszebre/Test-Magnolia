@@ -4,7 +4,6 @@ import styles from '@/styles/pokemonCard.module.css'
 import PokemonType from './PokemonType'
 import { Key } from "react";
 import { colorType } from '@/utils/colorType';
-import Details from './Details';
 import { useContext } from "react";
 import { Pokecontext } from '@/context/Pokecontext';
 const PokemonCard = (props:{
@@ -16,7 +15,10 @@ const PokemonCard = (props:{
     weight:number,
     stats:[{ base_stat: number; stat: { name: string } }]
 }) => {
-    const typeColor = colorType(props.ListType[0].type.name);
+    
+        const typeColor = colorType(props.ListType[0].type.name);
+    
+   
 
     const {setDetails,details,setPokemonData} = useContext(Pokecontext)
     const imgUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${props.numb}.png`;
@@ -28,7 +30,7 @@ const PokemonCard = (props:{
     };
     return (
         <>
-        <div className={styles.PokemonCard} >
+        <div className={styles.PokemonCard}  >
         <Image className={styles.PokemonImg} src={imgUrl} alt={props.name} width={256} height={256} />
                 <div className={styles.PokemonCardContainer}>
                     <span className={styles.PokemonCardNumber}>

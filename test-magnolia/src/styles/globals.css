@@ -72,7 +72,21 @@
     --card-border-rgb: 200, 200, 200;
   }
 }
-
+::-webkit-scrollbar {
+  width: 20px;
+  }
+  
+/* Track */
+      ::-webkit-scrollbar-track {
+        background: rgb(6, 11, 40);
+  }
+  
+/* Handle */
+  ::-webkit-scrollbar-thumb {
+  background:  greenyellow;
+  border-radius: 1rem;
+  }
+  
 * {
   box-sizing: border-box;
   padding: 0;

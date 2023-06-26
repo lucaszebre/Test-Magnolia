@@ -14,6 +14,14 @@ export type Pokecontext = { // Type for context
     setLoad:React.Dispatch<React.SetStateAction<number>>
     isLoadingMore:boolean
     setIsLoadingMore:React.Dispatch<React.SetStateAction<boolean>>
+    reset:boolean
+    setReset:React.Dispatch<React.SetStateAction<boolean>>
+    pagination:boolean
+    setPagination:React.Dispatch<React.SetStateAction<boolean>>
+    search:string
+    setSearch:React.Dispatch<React.SetStateAction<string>>
+    habitat:string,
+    setHabitat:React.Dispatch<React.SetStateAction<string>>
 
 };
 
@@ -37,7 +45,15 @@ setCurrentpage:()=>{},
 load:1,
 setLoad:()=>{},
 isLoadingMore:false,
-setIsLoadingMore:()=>{}
+setIsLoadingMore:()=>{},
+reset:false,
+setReset:()=>{},
+pagination:false,
+setPagination:()=>{},
+search:'',
+setSearch:()=>{},
+habitat:'',
+setHabitat:()=>{}
 });
 
 
@@ -51,7 +67,11 @@ const Pokedexcontext = (props: { children: React.ReactNode }) => { // Context pr
     const [currentPage,setCurrentpage]= useState(1)
     const [load,setLoad]= useState(1)
     const [details,setDetails]= useState(false)
+    const [pagination,setPagination]= useState(false)
+    const [search,setSearch]= useState('')
+    const [habitat,setHabitat]= useState('')
     const [isLoadingMore,setIsLoadingMore]= useState(false)
+    const [reset,setReset]= useState(false)
     const [PokemonData,setPokemonData]= useState<Pokemon>({
         number: undefined,
         id: 0,
@@ -78,7 +98,15 @@ const Pokedexcontext = (props: { children: React.ReactNode }) => { // Context pr
             load,
             setLoad,
             isLoadingMore,
-            setIsLoadingMore
+            setIsLoadingMore,
+            search,
+            setSearch,
+            reset,
+            setReset,
+            habitat,
+            setHabitat,
+            pagination,
+            setPagination
         }}
         >
         {props.children}
